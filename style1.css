@@ -421,7 +421,7 @@
 }
 
 .large {
-    height: 2000px;
+    height: 100px;
 }
 
 .container-website {
@@ -676,10 +676,12 @@ footer hr {
     /* box-shadow: 2px 2px 10px; */
     padding: 10px;
 }
+
 .main-hr {
     margin: 40px 0;
     border: 1px solid #f3f7fa;
 }
+
 .news-button {
     display: flex;
     justify-content: center;
@@ -689,6 +691,7 @@ footer hr {
     flex-wrap: wrap;
     margin: 20px auto;
 }
+
 .direction-btn {
     border-radius: 3px;
     padding: 2px 20px 0px;
@@ -696,6 +699,7 @@ footer hr {
     border: none;
     height: 36px;
 }
+
 .direction-btn:hover {
     background-color: var(--green-color)
 }

@@ -7,7 +7,7 @@
 
 :root {
     --green-color: #88b82e;
-    --blue--color: #0a92cd
+    --blue--color: #0a92cd;
     --color-green-background: #89b92e;
 }
 
@@ -507,7 +507,7 @@ footer hr {
     position: fixed;
     bottom: 180px;
     right: 30px;
-    background-color: var(--green-color);
+    background-color: var(--color-green-background);
     border-radius: 50px;
     color: #fff;
     width: 40px;
@@ -518,7 +518,7 @@ footer hr {
     position: fixed;
     bottom: 114px;
     right: 20px;
-    background-color: var(--green-color);
+    background-color: var(--color-green-background);
     ;
     border-radius: 50px;
     width: 60px;

@@ -84,9 +84,15 @@
     height: 65px;
     display: flex;
     justify-content: space-around;
-    position: sticky;
-    top: 0px;
     z-index: 1;
+
+}
+
+.header-posi {
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 999;
 }
 
 #nav {
@@ -272,6 +278,52 @@
     background-color: #fff;
 }
 
+
+.section__title {
+    height: 540px;
+    /* width: 100%; */
+    background-image: url(./img/Chung\ nhan\ san\ pham\ custom.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-image: linear-gradient(0, rgb(255, 255, 255), rgba(0, 0, 0, 0.125)), url(./img/Chung\ nhan\ san\ pham\ custom.png); */
+
+}
+
+.section__desc-title {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 15%;
+    width: 35%;
+    min-width: 540px;
+    z-index: 0;
+}
+
+.section__desc-line {
+    color: #fff;
+}
+
+.section__desc-line h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section__desc-line p {
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 15px;
+
+}
+
+.section__desc-btn button {
+    padding: 10px 20px;
+    background-color: var(--green-color);
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+
+
 .large {
     height: 2000px;
 }
@@ -279,6 +331,7 @@
 .container-website {
     height: 225px;
 }
+
 
 footer {
     display: block;

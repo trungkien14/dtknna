@@ -506,7 +506,7 @@ footer hr {
     position: fixed;
     bottom: 180px;
     right: 30px;
-    background-color: #89b92e;
+    background-color: var(--green-color);
     border-radius: 50px;
     color: #fff;
     width: 40px;
@@ -517,7 +517,7 @@ footer hr {
     position: fixed;
     bottom: 114px;
     right: 20px;
-    background-color: #89b92e;
+    background-color: var(--green-color);
     border-radius: 50px;
     width: 60px;
     height: 60px;

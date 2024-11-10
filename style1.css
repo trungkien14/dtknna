@@ -742,7 +742,7 @@ footer hr {
 .right-news-block p {
     color: #193963;
 }
-hr {
+.news hr {
     border: 1px dashed #D3D8E4;
     opacity: 1;
     margin: 15px 0px;

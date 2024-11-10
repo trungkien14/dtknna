@@ -9,6 +9,7 @@
     --green-color: #88b82e;
     --blue--color: #0a92cd;
     --color-green-background: #89b92e;
+    --darkblue-color: #193963;
 }
 
 .header__navtop {
@@ -81,7 +82,7 @@
 }
 
 .header__navbar {
-    background-color: #193963;
+    background-color: var(--darkblue-color);
     height: 65px;
     display: flex;
     justify-content: space-around;
@@ -196,7 +197,7 @@
     font-weight: bold;
     line-height: 40px;
     display: block;
-    color: #193963;
+    color: var(--darkblue-color);
 }
 
 #nav .subnav li a:hover {
@@ -354,7 +355,7 @@
     padding: 30px 0 18px 0;
     font-size: 26px;
     text-transform: uppercase;
-    color: #193963;
+    color: var(--darkblue-color);
 }
 
 .survice__box span {
@@ -432,7 +433,7 @@
 footer {
     display: block;
     padding-top: 32px;
-    background-color: #193963;
+    background-color: var(--darkblue-color);
     color: white;
 }
 
@@ -646,7 +647,7 @@ footer hr {
 .cooperate-website {
     padding-left: 7.5%;
     margin-bottom: 20px;
-    color: #193963;
+    color: var(--darkblue-color);
     font-weight: bold;
 }
 
@@ -740,9 +741,9 @@ footer hr {
 } 
 .left-news-block,
 .right-news-block p {
-    color: #193963;
+    color: var(--darkblue-color);
 }
-.news hr {
+.right-news-block hr {
     border: 1px dashed #D3D8E4;
     opacity: 1;
     margin: 15px 0px;

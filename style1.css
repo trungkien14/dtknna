@@ -593,16 +593,16 @@ footer hr {
     color: #7c869a;
 }
 
-.btn-support {
+.to-top, .message {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 20);
 
+}
 .to-top {
     position: fixed;
-    bottom: 180px;
-    right: 30px;
+    bottom: 195px;
+    right: 25px;
     background-color: var(--color-green-background);
     border-radius: 50px;
     color: #fff;
@@ -612,11 +612,10 @@ footer hr {
 
 .message {
     position: fixed;
-    bottom: 114px;
-    right: 20px;
+    bottom: 125px;
+    right: 15px;
     background-color: var(--color-green-background);
-    ;
-    border-radius: 50px;
+    border-radius: 50%;
     width: 60px;
     height: 60px;
 }
@@ -627,10 +626,11 @@ footer hr {
 }
 
 .message img {
-    width: 100%;
-    background-size: cover;
-}
+    width: 70%;
+    margin-left: 8px;
+    margin-top: 10px;
 
+}
 .to-top img {
     width: 100%;
 }

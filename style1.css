@@ -120,7 +120,11 @@
 #nav li {
     list-style: none;
     position: relative;
-    padding: 0 48px 0 0;
+    padding: 0 24px 0 24px;
+}
+
+#nav>li:nth-child(1) {
+    padding: 0 24px 0 0px;
 
 }
 
@@ -142,6 +146,10 @@
 
 #nav li:hover .subnav {
     display: block;
+}
+
+.subnav__padding {
+    padding: 0px 0px 0px 0px;
 }
 
 

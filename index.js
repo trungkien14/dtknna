@@ -14,7 +14,7 @@ function initializeSlider() {
     if (slides.length > 0) {
         slides[slideIndex].classList.add("displaySlide");
         slidesText[slideIndex].classList.add("displaySlide")
-        intervalId = setInterval(nextSlide, 15000);
+        intervalId = setInterval(nextSlide, 105000);
     }
 
 }

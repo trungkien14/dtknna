@@ -1006,7 +1006,7 @@ footer hr {
 .select-btn span {
     margin: 0 auto;
 }
-.select-menu:hover .select-list{
+.search-option-menu:hover .select-list{
     display: block;
     opacity: 1;
 }

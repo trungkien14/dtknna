@@ -47,3 +47,36 @@ function nextSlide() {
     slideIndex++;
     showSlide(slideIndex);
 }
+
+const selectBtn = document.querySelector('.js-select-btn');
+const selectList = document.querySelector('.js-select-list');
+const selectBtnIcon = document.querySelector(".select-btn i");
+
+function showList() {
+    selectList.classList.toggle('open');
+    selectBtnIcon.classList.toggle('action');
+}
+
+function closeList() {
+    selectList.classList.remove('open');
+    selectBtnIcon.classList.remove('action');
+
+}
+
+selectBtn.addEventListener('click', showList);
+
+document.addEventListener('click', (event) => {
+    if (!selectBtn.contains(event.target)) {
+        closeList();
+    }
+});
+
+
+
+const listPerson = document.querySelectorAll(".select-list .option");
+const selectBtnText = document.querySelector(".select-btn span");
+listPerson.forEach((item) => {
+    item.addEventListener("click", () => {
+        selectBtnText.textContent = item.textContent;
+    });
+});

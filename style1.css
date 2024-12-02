@@ -774,7 +774,8 @@ footer hr {
 .brand-partner {
     width: 195px;
     height: 130px;
-    /* background: #F3F7FA; */
+    background: transparent;
+    background-color: #F3F7FA;
 
 }
 

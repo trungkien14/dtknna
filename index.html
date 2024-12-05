@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
@@ -473,42 +474,51 @@
         </div>
     </main>
     <footer>
-        <div class="whole-container">
-            <div class="footer-info-container">
-                <div class="footer-info info">
-                    <p>BỘ KHOA HỌC VÀ CÔNG NGHỆ</p>
-                    <p>ỦY BAN TIÊU CHUẨN ĐO LƯỜNG CHẤT LƯỢNG QUỐC GIA</p>
-                    <p>TRUNG TÂM CHỨNG NHẬN PHÙ HỢP (QUACERT)</p>
-                    <div class="footer-social-icon">
-                        <a href="#"><img class="icon face-icon" src="./img/facebook icon.svg" loading="lazy" alt /></a>
-                        <a href="#"><img class="icon youtube-icon" src="./img/youtube icon.svg" loading="lazy"
-                                alt /></a>
+        <div class="whole-container">         
+            <div class="footer-info-container">             
+                   <div class="col-xs-5">
+                        <div class="footer-info info">
+                            <div class="text-wrap">
+                                <p>BỘ KHOA HỌC VÀ CÔNG NGHỆ</p>
+                                <p>ỦY BAN TIÊU CHUẨN ĐO LƯỜNG CHẤT LƯỢNG QUỐC GIA</p>
+                                <p>TRUNG TÂM CHỨNG NHẬN PHÙ HỢP (QUACERT)</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <a href="#"><img class="icon face-icon" src="./img/facebook icon.svg" loading="lazy" alt /></a>
+                                <a href="#"><img class="icon youtube-icon" src="./img/youtube icon.svg" loading="lazy"
+                                        alt /></a>
+                            </div>
+                        </div>
+                   </div>
+                    <div class="col-xs-2">
+                        <div class="footer-info link-footer">
+                            <p>Liên kết nhanh</p>
+                            <a href="#">Liên hệ</a>
+                            <a href="#">Văn bản pháp quy</a>
+                            <a href="#">Sơ đồ trang</a>
+                            <a href="#">Liên kết website</a>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-info link-footer">
-                    <p>Liên kết nhanh</p>
-                    <a href="#">Liên hệ</a>
-                    <a href="#">Văn bản pháp quy</a>
-                    <a href="#">Sơ đồ trang</a>
-                    <a href="#">Liên kết website</a>
-                </div>
-                <div class="footer-info contact">
-                    <p class="contact-desc">Liên hệ</p>
-                    <div class="contact-dress contact-mail">
-                        <i class="fa-solid fa-house"></i>
-                        <p>Số 8 Hoàng Quốc Việt,
-                            phường Nghĩa Đô - Cầu Giấy - Hà Nội - Việt Nam</p>
+                    <div class="col-xs-3">
+                        <div class="footer-info contact">
+                            <p class="contact-desc">Liên hệ</p>
+                            <div class="contact-dress contact-mail">
+                                <p><i class="fa-solid fa-house"></i>Số 8 Hoàng Quốc Việt, phường Nghĩa Đô - Cầu Giấy - Hà Nội - Việt Nam</p>
+                            </div>
+                            <p><i class="fa-solid fa-phone"></i>(84-24) 3756 1025
+                            </p>
+                            <p><i class="fa-solid fa-phone-volume"></i></i>(84-24)
+                                3756 3188</p>
+                            <div class="contact-mail"><i class="fa-solid fa-regular fa-envelope"></i><a
+                                    href="#">quacert@quacert.gov.vn</a></div>
+                        </div>
                     </div>
-                    <p><i class="fa-solid fa-phone"></i>(84-24) 3756 1025
-                    </p>
-                    <p><i class="fa-solid fa-phone-volume"></i></i>(84-24)
-                        3756 3188</p>
-                    <div class="contact-mail"><i class="fa-solid fa-regular fa-envelope"></i><a
-                            href="#">quacert@quacert.gov.vn</a></div>
-                </div>
-                <div class="footer-info entrance">
-                    <p>Số lượt truy cập: <span id="visits">927742</span></p>
-                    <img loading="lazy" src="./img/tín nhiệm mạng.png" alt />
+                    <div class="col-xs-2">
+                        <div class="footer-info entrance">
+                            <p>Số lượt truy cập: <span id="visits">927742</span></p>
+                            <img loading="lazy" src="./img/tín nhiệm mạng.png" alt />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

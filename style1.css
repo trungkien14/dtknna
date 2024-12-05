@@ -550,11 +550,12 @@ footer {
 .footer-info-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-social-icon {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -568,9 +569,8 @@ footer {
 }
 
 .footer-social-icon img {
-    width: 35px;
-    height: 150%;
     object-fit: contain;
+    margin: 0 0 12px;
 }
 
 .link-footer,
@@ -586,10 +586,13 @@ footer {
 
 .contact p {
     margin-bottom: 15px;
+    align-items: start;
 }
 
 #visits {
     color: green;
+    width: auto;
+    height: auto;
 }
 
 .contact a,
@@ -626,7 +629,7 @@ footer {
 }
 
 .entrance p {
-    margin-bottom: 15px;
+    margin-bottom:15px;
 }
 
 .link-footer a:hover {
@@ -640,12 +643,13 @@ footer {
 
 .info {
     line-height: 27px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .info p {
-    font-weight: bold;
     font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0 !important;
 }
 
 .link-footer {
@@ -663,11 +667,6 @@ footer {
     font-size: 16px;
     margin-bottom: 15px;
 }
-
-.youtube-icon {
-    margin: 0 10px;
-}
-
 .icon {
     filter: grayscale(100%) !important;
 }

@@ -1,0 +1,27 @@
+@media (max-width: 750px) {
+    .header__navtop {
+        display: none;
+    }
+
+    .navbar-left {
+        display: none;
+    }
+
+    .header__navbar {
+        width: 94%;
+    }
+
+    #header .navbar-right {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .box-title>button {}
+
+}

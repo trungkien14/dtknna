@@ -25,3 +25,14 @@
     .box-title>button {}
 
 }
+@media (max-width: 769px) {
+    .contact-desc,
+    .link-footer p,
+    .entrance p {
+        margin-top: 24px !important;
+        margin-bottom: 4px !important;
+    }
+    .entrance p {
+        margin-bottom: 16px !important;
+    }
+}

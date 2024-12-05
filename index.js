@@ -3,21 +3,16 @@ const slidesText = document.querySelectorAll(".section__desc-slides .section__de
 let slideIndex = 0;
 let intervalId = null;
 
-// initializeSlider();
-
 document.addEventListener("DOMContentLoaded", initializeSlider)
 
 function initializeSlider() {
-
-
-
     if (slides.length > 0) {
         slides[slideIndex].classList.add("displaySlide");
         slidesText[slideIndex].classList.add("displaySlide")
-        intervalId = setInterval(nextSlide, 105000);
+        intervalId = setInterval(nextSlide, 4000);
     }
-
 }
+
 function showSlide(index) {
 
     if (index >= slides.length) {
@@ -80,3 +75,37 @@ listPerson.forEach((item) => {
         selectBtnText.textContent = item.textContent;
     });
 });
+
+const serviceLists = document.querySelectorAll(".survice__list");
+let serviceIndex = 0;
+
+function initializeServiceSlider() {
+    showServiceList(serviceIndex);
+}
+
+function showServiceList(index) {
+    serviceLists.forEach((list, i) => {
+        list.style.display = i === index ? "flex" : "none";
+    });
+}
+
+function prevServiceList() {
+    serviceIndex--;
+    if (serviceIndex < 0) {
+        serviceIndex = serviceLists.length - 1;
+    }
+    showServiceList(serviceIndex);
+}
+
+function nextServiceList() {
+    serviceIndex++;
+    if (serviceIndex >= serviceLists.length) {
+        serviceIndex = 0;
+    }
+    showServiceList(serviceIndex);
+}
+
+document.querySelector('.btn-prev-survice').addEventListener('click', prevServiceList);
+document.querySelector('.btn-next-survice').addEventListener('click', nextServiceList);
+
+document.addEventListener("DOMContentLoaded", initializeServiceSlider);

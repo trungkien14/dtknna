@@ -4,13 +4,13 @@
     box-sizing: border-box;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
 :root {
     --green-color: #88b82e;
     --blue--color: #0a92cd;
     --color-green-background: #89b92e;
     --darkblue-color: #193963;
     --color-white-background: #f3f7fa;
+    --body-font: 'Roboto', sans-serif;
 }
 
 #header {
@@ -1159,3 +1159,4 @@ footer hr {
     font-size: 15px;
     font-weight: 400;
 }
+

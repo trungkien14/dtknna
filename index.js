@@ -109,3 +109,16 @@ document.querySelector('.btn-prev-survice').addEventListener('click', prevServic
 document.querySelector('.btn-next-survice').addEventListener('click', nextServiceList);
 
 document.addEventListener("DOMContentLoaded", initializeServiceSlider);
+
+
+const btnToTop = document.querySelector(".btn-to-top");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        btnToTop.style.display = "block";
+    } else {
+        btnToTop.style.display = "none";
+    }
+}

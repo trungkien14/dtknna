@@ -122,3 +122,27 @@ function scrollFunction() {
         btnToTop.style.display = "none";
     }
 }
+// document.getElementById("message").addEventListener("click", function (event) {
+//     event.preventDefault();
+//     const box = document.getElementById("chatbox");
+//     const currentDisplay = window.getComputedStyle(box).display;
+//     if (currentDisplay === "none") {
+//       box.style.display = "block";
+//     } else {
+//       box.style.display = "none";
+//     }
+//   });
+document.getElementById("message").addEventListener("click", function (event) {
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+    
+    const box = document.getElementById("chatbox");
+    const currentDisplay = window.getComputedStyle(box).display; // Lấy giá trị hiển thị thực tế
+    
+    // Đổi trạng thái hiển thị
+    box.style.display = currentDisplay === "none" ? "block" : "none";
+  });
+  // Sự kiện cho nút "X"
+  document.getElementById("chatbox-close").addEventListener("click", function () {
+    const box = document.getElementById("chatbox");
+    box.style.display = "none"; // Ẩn box
+  });

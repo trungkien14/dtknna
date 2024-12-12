@@ -1159,4 +1159,56 @@ footer hr {
     font-size: 15px;
     font-weight: 400;
 }
-
+.chatbox {
+    position: fixed;
+    bottom: 120px;
+    right: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: animation-chatbox 0.5s ease forwards;
+}
+.chatbox-header {
+    background-color: var(--green-color);
+    padding: 15px 10px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chatbox-container {
+    background-color: white;
+}
+.chatbox-container a{
+    display: flex;
+    width: 100%;
+    color: var(--darkblue-color);
+    padding: 10px 0;
+    text-decoration: none;
+}
+.chatbox-container i {
+    padding: 0 20px;
+}
+.chatbox-container {
+    font-weight: bold;
+}
+#chatbox-close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.chatbox-container a:hover {
+    background-color: #e8e8e8;
+    transition: 0.2s ease-in-out;
+}
+@keyframes animation-chatbox {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

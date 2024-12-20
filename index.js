@@ -143,15 +143,14 @@ document.getElementById("partner-skip").addEventListener("click", function (even
     
     const box = document.getElementById("news");
     const currentDisplay = window.getComputedStyle(box).display;
-    
     box.style.display = currentDisplay === "none" ? "flex" : "none";
-  });
+  });   
 
-  document.getElementById("news-button").addEventListener("click", function (event) {
+document.getElementById("news-button").addEventListener("click", function (event) {
     event.preventDefault();
     
     const box = document.getElementById("news");
     const currentDisplay = window.getComputedStyle(box).display;
     
-    box.style.display = currentDisplay === "none" ? "flex" : "none";
+    box.style.display = currentDisplay === "none" ? "flex": "none";
   });

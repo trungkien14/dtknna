@@ -105,30 +105,30 @@
 
     /* tin tuc */
     .news-container {
-        width: 94%;
+        width: 94% !important;
     }
 
     .news-block {
-        display: block;
+        display: block !important;
     }
 
     .news-container h2 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .news-button {
-        display: inline-block;
-        text-wrap: nowrap;
-        overflow-x: scroll;
-        scrollbar-width: none;
+        display: inline-block !important;
+        text-wrap: nowrap !important;
+        overflow-x: scroll !important;
+        scrollbar-width: none !important;
     }
 
     .right-news-block-info p {
-        line-height: 23px;
+        line-height: 23px !important;
     }
 
     .right-news-block {
-        margin-top: 30px;
+        margin-top: 30px !important;
     }
 
     /* partner */

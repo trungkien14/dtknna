@@ -48,7 +48,9 @@
     font-weight: 600;
     color: var(--green-color);
 }
-
+.nav__top-desc h2 {
+    color: var(--darkblue-color);
+}
 
 .nav__top-right {
     display: flex;
@@ -501,6 +503,14 @@
     text-transform: uppercase;
     color: var(--darkblue-color);
 }
+.box-title,
+.section__desc-slides {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1333px;
+    display: flex;
+}
 
 .survice__box span {
     color: var(--green-color);
@@ -612,7 +622,7 @@
     margin: auto;
     max-width: 1333px;
 }
-
+/* footer */
 footer {
     display: block;
     padding-top: 32px;
@@ -770,7 +780,13 @@ footer hr {
     margin: 0 auto;
     max-width: 1333px;
 }
-
+.whole-container {
+    width: 85%;
+    margin: 0 auto;
+    /* padding: 0px 6.8%; */
+    max-width: 1333px;
+}
+/* back to top and message buttonbutton */
 .to-top,
 .message {
     display: flex;
@@ -813,24 +829,17 @@ footer hr {
     height: 60px;
 }
 
-.whole-container {
-    width: 85%;
-    margin: 0 auto;
-    /* padding: 0px 6.8%; */
-    max-width: 1333px;
-}
-
 .message img {
     width: 70%;
     margin-left: 8px;
     margin-top: 10px;
-
 }
 
 .to-top img {
     width: 100%;
 }
 
+/* partner  */
 .link {
     margin: 0px 20px;
 }
@@ -881,7 +890,7 @@ footer hr {
     margin: 40px 0;
     border: 1px solid var(--color-white-background);
 }
-
+/* news  */
 .news-container h2 {
     text-align: center;
     font-size: 27px;
@@ -995,15 +1004,7 @@ footer hr {
     max-width: 1333px;
 }
 
-.box-title,
-.section__desc-slides {
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
-    max-width: 1333px;
-    display: flex;
-}
-
+/* search */
 .search {
     width: 100%;
     height: 220px;
@@ -1159,6 +1160,7 @@ footer hr {
     font-size: 15px;
     font-weight: 400;
 }
+/* chatbox */
 .chatbox {
     position: fixed;
     bottom: 120px;

@@ -143,7 +143,10 @@ document.getElementById("partner-skip").addEventListener("click", function (even
     
     const box = document.getElementById("news");
     const currentDisplay = window.getComputedStyle(box).display;
-    box.style.display = currentDisplay === "none" ? "flex" : "none";
+    // box.style.display = currentDisplay === "none" ? "flex": "none";
+    if (currentDisplay === "flex") {
+        box.style.display = "none";
+    }
   });   
 
 document.getElementById("news-button").addEventListener("click", function (event) {
@@ -151,6 +154,9 @@ document.getElementById("news-button").addEventListener("click", function (event
     
     const box = document.getElementById("news");
     const currentDisplay = window.getComputedStyle(box).display;
+    // box.style.display = currentDisplay === "none" ? "flex": "none";
     
-    box.style.display = currentDisplay === "none" ? "flex": "none";
+    if (currentDisplay === "none") {
+        box.style.display = "flex";
+    }
   });

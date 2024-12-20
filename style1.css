@@ -918,7 +918,7 @@ footer hr {
 }
 
 .direction-btn:hover {
-    background-color: var(--green-color);
+    background-color: var(--green-color) !important;
     color: #fff;
     font-weight: 600;
 }

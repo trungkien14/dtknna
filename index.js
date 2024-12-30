@@ -176,5 +176,3 @@ document.querySelectorAll('.navbar-btn').forEach(link => {
         event.preventDefault();
     });
 });
-
-xxxx

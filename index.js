@@ -176,3 +176,60 @@ document.querySelectorAll('.navbar-btn').forEach(link => {
         event.preventDefault();
     });
 });
+
+//Chatbox
+document.getElementById("message").addEventListener("click", function (event) {
+    event.preventDefault();
+    
+    const box = document.getElementById("chatbox");
+    const currentDisplay = window.getComputedStyle(box).display;
+    
+    box.style.display = currentDisplay === "none" ? "block" : "none";
+  });
+
+  document.getElementById("chatbox-close").addEventListener("click", function () {
+    const box = document.getElementById("chatbox");
+    box.style.display = "none";
+  });
+
+//tin tức
+document.getElementById("partner-skip").addEventListener("click", function (event) {
+    event.preventDefault();
+    
+    const box = document.getElementById("news");
+    const currentDisplay = window.getComputedStyle(box).display;
+    const partnerbutton = document.getElementById("partner-skip");
+    const newsbutton = document.getElementById("news-button");
+
+    if (currentDisplay === "flex") {
+        box.style.display = "none";
+        partnerbutton.style.backgroundColor = "#89b92e";
+        newsbutton.style.backgroundColor = "#eef1f6";
+    }
+    else {
+        box.style.display = "flex";
+        partnerbutton.style.backgroundColor = "#eef1f6";
+        newsbutton.style.backgroundColor = "#89b92e";
+    }
+    
+  });   
+
+document.getElementById("news-button").addEventListener("click", function (event) {
+    event.preventDefault();
+    
+    const box = document.getElementById("news");
+    const newsbutton = document.getElementById("news-button");
+    const partnerbutton = document.getElementById("partner-skip");
+    const currentDisplay = window.getComputedStyle(box).display;
+    
+    if (currentDisplay === "none") {
+        box.style.display = "flex";
+        newsbutton.style.backgroundColor = "#89b92e";
+        partnerbutton.style.backgroundColor = "#eef1f6";
+    }
+    else{
+        box.style.display = "none"
+        newsbutton.style.backgroundColor = "#eef1f6";
+        partnerbutton.style.backgroundColor = "#89b92e";
+    }
+  });

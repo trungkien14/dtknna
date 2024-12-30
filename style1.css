@@ -252,9 +252,17 @@
     font-size: 21px;
 }
 
+#header .search-box-mb {
+    display: none;
+}
+
 #header .navbar-btn img {
     width: 27px;
     display: flex;
+}
+
+.search-tab {
+    display: none;
 }
 
 #header .navbar-logo {
@@ -805,6 +813,7 @@ footer hr {
     width: 40px;
     height: 40px;
     animation: actionToTop 0.5s ease-in-out;
+    display: none;
 }
 
 @keyframes actionToTop {
@@ -921,6 +930,12 @@ footer hr {
     background-color: var(--green-color) !important;
     color: #fff;
     font-weight: 600;
+}
+
+
+.news-tab-btn.active {
+    background-color: #6c9e3f;
+    color: white;
 }
 
 .news-block {

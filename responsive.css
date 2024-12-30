@@ -3,8 +3,171 @@
         display: none;
     }
 
+    .nav__top-mb-desc h2 {
+        font-size: 14px;
+    }
+
+    .nav__top-open {
+        display: none;
+    }
+
+    .nav__top-close {
+        display: none;
+    }
+
+    .nav__top-open.active {
+        display: block;
+    }
+
+    .nav__top-close.active {
+        display: block;
+    }
+
+    #nav li:hover .subnav {
+        display: none;
+    }
+
+    /* nav */
+    #nav {
+        display: block;
+        margin-top: 65px;
+        position: absolute;
+        background-color: #fff;
+        /* color: #000; */
+        right: 0;
+        width: 80%;
+        padding: 12px 15px;
+        height: 80vh;
+        overflow-y: scroll;
+        max-width: 360px;
+    }
+
+    #nav>li:nth-child(1) {
+        padding: 0;
+    }
+
+    #nav>li {
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    #nav>li a {
+        padding: 0 10px;
+    }
+
+
+    #nav .subnav {
+        position: unset;
+        border-radius: 0px;
+        box-shadow: none;
+        background-color: #f3f7fa;
+    }
+
+    #nav .subnav li a:hover {
+        color: unset;
+        text-decoration: none;
+    }
+
+    .subnav__padding {
+        padding: 0 8px;
+    }
+
+    #nav .subnav li a {
+        height: 33px;
+        font-size: 13px;
+    }
+
+    #nav .subnav-col-right {
+        min-width: 0px;
+        border: none;
+    }
+
+
+    #nav li {
+        display: inline-table;
+        width: 100%;
+        padding: 0 0 5px 0;
+    }
+
+    #nav li a {
+        color: #193963;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16.5px;
+        height: 46px;
+    }
+
+    #nav li a>i {
+        padding: 10px 0 10px 12px;
+    }
+
+    #nav .subnav-col {
+        display: block;
+    }
+
     .navbar-left {
         display: none;
+        overflow: hidden;
+        animation: hidden 0.2s ease-in-out;
+    }
+
+    .navbar-left.display {
+        display: block;
+    }
+
+    .search-tab {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 360px;
+        height: 100%;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        margin-top: 65px;
+    }
+
+    .search-container input {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px 2px;
+        border: none;
+        outline: none;
+        border-bottom: 2px #193963 solid;
+    }
+
+
+    .search-container .search-submit {
+        margin-top: 13px;
+        width: 100%;
+        padding: 13px 0;
+        background-color: #193963;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 4px;
+        border: none;
+    }
+
+
+    .hidden {
+        transform: translateX(100%);
+    }
+
+    .search-container {
+        margin-top: 20px;
+    }
+
+    .close-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        color: #757f9f;
     }
 
     .header__navbar {
@@ -13,6 +176,53 @@
 
     #header .navbar-right {
         display: none;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background-color: #193963;
+        width: 80%;
+        height: 13vh;
+        line-height: 0;
+        justify-content: center;
+        animation: hidden 0.2s ease-in-out;
+        max-width: 360px;
+    }
+
+    #header .navbar-right.display {
+        display: flex;
+    }
+
+    @keyframes hidden {
+        from {
+            opacity: 0.7;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+    }
+
+    #header .search-box {
+        display: none;
+    }
+
+    #header .navbar-btn {
+        padding: 0 13px 0 13px;
+    }
+
+    #header .search-box-mb {
+        display: block;
+    }
+
+    #header .navbar-logo {
+        display: block;
+
+    }
+
+    .navbar-right .navbar-btn {
+        margin-top: 20px;
+
     }
 
     .navbar-mobile {
@@ -102,6 +312,8 @@
     .search h2 {
         font-size: 20px;
     }
+
+
 
     /* tin tuc */
     .news-container {

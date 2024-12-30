@@ -125,7 +125,7 @@
                 <ul id="nav">
                     <li><a href="#">Trang chủ</a></li>
                     <li>
-                        <a href="#">Giới thiệu QUACERT
+                        <a href="#" class="toggle-subnav">Giới thiệu QUACERT
                             <i class="nav-arrow-down fa-solid fa-angle-down"></i>
                         </a>
                         <ul class="subnav subnav__padding">
@@ -141,7 +141,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Dịch vụ & sản phẩm
+                        <a href="#" class="toggle-subnav">Dịch vụ & sản phẩm
                             <i class="nav-arrow-down fa-solid fa-angle-down"></i>
                         </a>
                         <ul class="subnav">
@@ -179,6 +179,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
+                <div class="navbar-btn search-box-mb" onclick="toggleSearchTab()">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
                 <div class="navbar-btn">
                     <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                 </div>
@@ -190,6 +193,20 @@
                 </div>
                 <div class="navbar-logo navbar-btn">
                     <a href=""><img src="./img/american_logo.png" alt=""></a>
+                </div>
+            </div>
+
+
+
+            <div id="search-tab" class="search-tab hidden">
+                <button class="close-button" onclick="toggleSearchTab()">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    Quay lại</button>
+                <div class="search-container">
+                    <input type="text" placeholder="Tìm kiếm..." />
+                    <button class="search-submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Tìm kiếm</button>
                 </div>
             </div>
 
@@ -205,9 +222,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="nav__top-mb-right">
-                    <div>
+                <div class="nav__top-mb-right" onclick="actionNav()">
+                    <div class="nav__top-open active" onclick="activeMenu()">
                         <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="nav__top-close" onclick="activeMenu(), closeSearch()">
+                        <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>
             </div>
@@ -501,12 +521,12 @@
                 <span style="color: var(--green-color);">TỨC</span>
             </h2>
             <div class="news-button">
-                <button class="news-tab-btn direction-btn">NỔI BẬT</button>
-                <button class="news-tab-btn direction-btn">TIẾT KIỆM NĂNG LƯỢNG</button>
-                <button class="news-tab-btn direction-btn">SẢN PHẦM TIÊU DỤNG</button>
-                <button class="news-tab-btn direction-btn">GTVT ĐƯỜNG BỘ</button>
-                <button class="news-tab-btn direction-btn">SỨC KHỎE NGHỀ NGHIỆP</button>
-                <button class="news-tab-btn direction-btn">XEM THÊM</button>
+                <button class="news-tab-btn direction-btn active" onclick="highlightButton(this)">NỔI BẬT</button>
+                <button class="news-tab-btn direction-btn" onclick="highlightButton(this)">TIẾT KIỆM NĂNG LƯỢNG</button>
+                <button class="news-tab-btn direction-btn" onclick="highlightButton(this)">SẢN PHẨM TIÊU DỤNG</button>
+                <button class="news-tab-btn direction-btn" onclick="highlightButton(this)">GTVT ĐƯỜNG BỘ</button>
+                <button class="news-tab-btn direction-btn" onclick="highlightButton(this)">SỨC KHỎE NGHỀ NGHIỆP</button>
+                <button class="news-tab-btn direction-btn" onclick="highlightButton(this)">XEM THÊM</button>
             </div>
             <div class="news-block">
                 <a href="#" class="left-news-block">
